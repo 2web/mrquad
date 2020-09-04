@@ -1,6 +1,5 @@
 import React from 'react';
 import {createGlobalStyle} from 'styled-components';
-import styled from 'styled-components';
 import { NavBar } from './Components/NavBar';
 
 const GlobalStyle = createGlobalStyle`

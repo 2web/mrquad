@@ -23,7 +23,7 @@ const Logo = styled.div`
 
 const H1 = styled.h1`
     font-size: 24px;
-    margin-left: 15px;
+    /*margin-left: 15px;*/
 `;
 
 const ImgLogo = styled.img`
