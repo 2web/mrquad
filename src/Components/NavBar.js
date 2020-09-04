@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logoImg from '../image/logo.svg'
+import signImg from '../image/sign.svg'
 
 const NavBarStyled = styled.header`
     position: fixed;
@@ -30,6 +31,14 @@ const ImgLogo = styled.img`
     width: 50px;
 `;
 
+const Login = styled.button`
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 16px;
+`;
+
 const ButtonLogin = styled.button`
     box-shadow:inset 0px 1px 0px 0px #fff6af;
 	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
@@ -37,7 +46,6 @@ const ButtonLogin = styled.button`
 	border-radius:6px;
 	border:1px solid #ffaa22;
 	display:inline-block;
-	cursor:pointer;
 	color:#333333;
 	font-family:Arial;
 	font-size:15px;
@@ -50,17 +58,15 @@ const ButtonLogin = styled.button`
         background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
 	    background-color:#ffab23;
     }
-    :active{
-        position:relative;
-	    top:1px;
-        outline: 0;
-    }
 `;
 
 export const NavBar = () => (
     <NavBarStyled>
         <ImgLogo src={logoImg} alt="" />
         <H1>MrQuad's</H1>
-        <ButtonLogin>войти</ButtonLogin>
+        <Login>
+            <img src={signImg} alt="Войти" />
+            <p>войти</p>
+        </Login>
     </NavBarStyled>
 )

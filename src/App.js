@@ -40,6 +40,15 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
   }
+  button{
+    cursor: pointer;
+    outline: 0;
+    :active{
+        position:relative;
+	      top:1px;
+        outline: 0;
+    }
+  }
 `;
 
 
