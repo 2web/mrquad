@@ -11,6 +11,7 @@ const MenuStyled = styled.main`
 
 const SectionMenu = styled.section`
     padding: 30px;
+    margin-left: 380px;
 `;
 
 

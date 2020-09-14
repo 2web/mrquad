@@ -55,6 +55,11 @@ const BannerPrice = styled.div`
     
 `;
 
+const ButtonArea = styled.div`
+    display: flex;
+    flex-direction: row;
+`;
+
 export const ModalItem = ({ openItem, setOpenItem }) => {
 
     function closeModal(e){
@@ -77,7 +82,9 @@ export const ModalItem = ({ openItem, setOpenItem }) => {
                             {style: 'currency', currency: 'RUB'})}
                     </BannerPrice>
                 </Title>
-                <ButtonModal/>
+                <ButtonArea>
+                    <ButtonModal>Добавить</ButtonModal>
+                </ButtonArea>
             </Modal>
         </Overlay>
     )
